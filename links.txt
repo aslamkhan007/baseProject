@@ -1,0 +1,45 @@
+
+npx vs npm 
+https://stackoverflow.com/questions/50605219/difference-between-npx-and-npm#:~:text=npx%20is%20a%20npm%20package,it%20in%20a%20single%20step.
+
+
+
+
+
+
+
+
+
+variables in react good site
+https://www.pluralsight.com/guides/how-to-use-variables-within-classes
+
+
+
+
+
+https://www.aspdotnet-suresh.com/2012/03/bind-data-and-display-datatable-on-aspx.html
+
+
+https://stackoverflow.com/questions/20226169/how-to-pass-json-post-data-to-web-api-method-as-an-object
+object pass krna jquery se asp.net web forms me.
+
+
+visual stutio ka modify link////////
+
+
+https://stackoverflow.com/questions/50185146/the-setup-for-this-installation-of-visual-studio-is-not-complete-really
+
+
+
+jquery ka link //////////////////
+
+https://codepedia.info/insert-data-using-jquery-ajax-in-asp-net-csharp-database-ms-sql-server
+
+
+
+
+https://docs.microsoft.com/en-us/aspnet/web-api/overview/security/enabling-cross-origin-requests-in-web-api
+
+
+https://www.w3schools.com/react/react_css.asp
+reactcss
