@@ -15,7 +15,9 @@ export default class Login extends Component {
     };
   }
 
- 
+ // note: asyn await componentidmound ko kia hai ab hum function asyn function bna k dalenge. bjay componentdid
+ //ko asynn  krne k  ab agle phase me function bna k component did mount me dalenge.
+
 //  async componentDidMount() {
 //   await  fetch("http://13.233.21.154/reactcrudapi/api/Employee")
 //       .then((response) => response.json())
@@ -26,47 +28,15 @@ export default class Login extends Component {
 //   }
 
 
-
-// async function 
-// data = async() => {
-//   await fetch("http://13.233.21.154/reactcrudapi/api/Employee")
-//     .then((response) => response.json())
-//     .then((result) => {
-//       console.log(result);
-//       this.setState({ arr: result });
-//     })
-//   }
-
-
-
-//normal async fnction 
- async data () {
-  await fetch("http://13.233.21.154/reactcrudapi/api/Employee")
-    .then((response) => response.json())
-    .then((result) => {
-      console.log(result);
-      this.setState({ arr: result });
-    })
+async componentDidMount() {
+  await  fetch("http://13.233.21.154/reactcrudapi/api/Employee")
+      .then((response) => response.json())
+      .then((result) => {
+        console.log(result);
+        this.setState({ arr: result });
+      });
   }
-
-
-//normal sync fnction 
-//  data () {
-//    fetch("http://13.233.21.154/reactcrudapi/api/Employee")
-//     .then((response) => response.json())
-//     .then((result) => {
-//       console.log(result);
-//       this.setState({ arr: result });
-//     })
-//   }
-
-
- componentDidMount() {
-   //this.data();
-  }
-
-   
-
+  
   hnadleChange = (e) => {
     e.preventDefault();
     this.setState({ name: e.target.value });
@@ -76,24 +46,15 @@ export default class Login extends Component {
     //console.log(e.target.value)
   };
 
-   handleOnclick = async () => {
+  handleOnclick = async () => {
     // this.setState({ name: "ss" });
     // this.setState({ login: this.state.name });
     //  this.abc = this.state.name;
-    await  this.setState({ login: this.state.name });
+     await this.setState({ login: this.state.name });
     //await this.setState({arr:result})
-    //this.data();
-    
-    
-
-    await fetch("http://13.233.21.154/reactcrudapi/api/Employee")
-    .then((response) => response.json())
-    .then((result) => {
-      console.log(result);
-      this.setState({ arr: result });
-    })
-
     await this.setState({ data: this.state.arr });
+
+   
 
     // this.abc = "jkhkjs";
     // console.log(`${this.abc} onclick pe set  `);

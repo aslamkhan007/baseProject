@@ -15,7 +15,11 @@ export default class Login extends Component {
     };
   }
 
- 
+ //note: async arrow function , normal function async, normal function bnaye hain
+  //normal function k ander jo ki handle click h usme await kr k async bnaye.
+  //componentwill unmount async wali error ko resolve krna hai.login_2.js me
+
+
 //  async componentDidMount() {
 //   await  fetch("http://13.233.21.154/reactcrudapi/api/Employee")
 //       .then((response) => response.json())
